@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/DiffusersSynopsis.sandbox/DiffusersSynopsis.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/DiffusersSynopsis/DiffusersSynopsis.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/ideaPlugin/ideaPlugin.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/migrationTest.build/migrationTest.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/txtPersistence/txtPersistence.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

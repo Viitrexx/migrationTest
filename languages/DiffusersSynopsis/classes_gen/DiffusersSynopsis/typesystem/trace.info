@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,16,0" name="DiffusersSynopsis.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:d95cc44d-fb6d-4955-9805-f3f790b00550(DiffusersSynopsis.typesystem)/5030534239781473124">
+    <file name="TypesystemDescriptor.java">
+      <node id="5030534239781473124" at="10,5,11,91" concept="5" />
+      <node id="5030534239781473124" at="11,91,12,55" concept="2" />
+      <node id="5030534239781473124" at="9,33,13,5" concept="0" />
+      <scope id="5030534239781473124" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="5030534239781473124" />
+      </scope>
+    </file>
+    <file name="warnSizeMemory_NonTypesystemRule.java">
+      <node id="5030534239781479865" at="24,7,25,66" concept="5" />
+      <node id="5030534239781479865" at="25,66,26,301" concept="5" />
+      <node id="5030534239781473124" at="30,50,31,32" concept="6" />
+      <node id="5030534239781473124" at="33,68,34,102" concept="6" />
+      <node id="5030534239781473124" at="36,30,37,17" concept="6" />
+      <node id="5030534239781473124" at="41,0,42,0" concept="7" trace="height$meRg" />
+      <node id="5030534239781473124" at="42,0,43,0" concept="7" trace="width$x1Oh" />
+      <node id="5030534239781473124" at="46,0,47,0" concept="7" trace="Synopsis$nM" />
+      <node id="5030534239781473124" at="20,0,22,0" concept="1" trace="warnSizeMemory_NonTypesystemRule#()V" />
+      <node id="5030534239781473124" at="30,0,33,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5030534239781473124" at="33,0,36,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5030534239781473124" at="36,0,39,0" concept="4" trace="overrides#()Z" />
+      <node id="5030534239781479865" at="23,143,27,7" concept="0" />
+      <node id="5030534239781473151" at="22,121,28,5" concept="3" />
+      <node id="5030534239781473124" at="22,0,30,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5030534239781473124" at="20,45,20,45" />
+      <scope id="5030534239781473124" at="30,50,31,32" />
+      <scope id="5030534239781473124" at="33,68,34,102" />
+      <scope id="5030534239781473124" at="36,30,37,17" />
+      <scope id="5030534239781473124" at="20,0,22,0" />
+      <scope id="5030534239781479865" at="24,7,26,301">
+        <var name="_reporter_2309309498" id="5030534239781479865" />
+        <var name="errorTarget" id="5030534239781479865" />
+      </scope>
+      <scope id="5030534239781473124" at="30,0,33,0" />
+      <scope id="5030534239781473124" at="33,0,36,0">
+        <var name="argument" id="5030534239781473124" />
+      </scope>
+      <scope id="5030534239781473124" at="36,0,39,0" />
+      <scope id="5030534239781473153" at="23,143,27,7" />
+      <scope id="5030534239781473125" at="22,121,28,5" />
+      <scope id="5030534239781473124" at="22,0,30,0">
+        <var name="status" id="5030534239781473124" />
+        <var name="synopsis" id="5030534239781473124" />
+        <var name="typeCheckingContext" id="5030534239781473124" />
+      </scope>
+      <unit id="5030534239781473124" at="45,0,48,0" name="DiffusersSynopsis.typesystem.warnSizeMemory_NonTypesystemRule$CONCEPTS" />
+      <unit id="5030534239781473124" at="40,0,44,0" name="DiffusersSynopsis.typesystem.warnSizeMemory_NonTypesystemRule$PROPS" />
+      <unit id="5030534239781473124" at="19,0,49,0" name="DiffusersSynopsis.typesystem.warnSizeMemory_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

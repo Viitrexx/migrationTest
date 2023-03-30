@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,29,0" name="DiffusersSynopsis.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:e8463b0f-9463-42a9-a3cb-ceffad1499be(DiffusersSynopsis.constraints)/5030534239781345666">
+    <file name="Synopsis_Constraints.java">
+      <node id="5030534239781345666" at="20,33,21,32" concept="8" />
+      <node id="5030534239781345667" at="25,64,26,65" concept="8" />
+      <node id="5030534239781345667" at="29,109,30,99" concept="4" />
+      <node id="5030534239781345667" at="31,53,32,158" concept="1" />
+      <node id="5030534239781345667" at="33,7,34,20" concept="5" />
+      <node id="5030534239781444546" at="37,34,38,54" concept="5" />
+      <node id="5030534239781447240" at="39,7,40,18" concept="5" />
+      <node id="5030534239781356172" at="44,60,45,61" concept="8" />
+      <node id="5030534239781356172" at="48,109,49,100" concept="4" />
+      <node id="5030534239781356172" at="50,53,51,158" concept="1" />
+      <node id="5030534239781356172" at="52,7,53,20" concept="5" />
+      <node id="5030534239781356346" at="55,82,56,32" concept="5" />
+      <node id="5030534239781363117" at="60,61,61,62" concept="8" />
+      <node id="5030534239781363117" at="64,109,65,100" concept="4" />
+      <node id="5030534239781363117" at="66,53,67,158" concept="1" />
+      <node id="5030534239781363117" at="68,7,69,20" concept="5" />
+      <node id="5030534239781363263" at="71,82,72,32" concept="5" />
+      <node id="5030534239781370800" at="76,60,77,61" concept="8" />
+      <node id="5030534239781370800" at="80,109,81,100" concept="4" />
+      <node id="5030534239781370800" at="82,53,83,158" concept="1" />
+      <node id="5030534239781370800" at="84,7,85,20" concept="5" />
+      <node id="5030534239781370959" at="87,82,88,32" concept="5" />
+      <node id="5030534239781345666" at="92,84,93,119" concept="4" />
+      <node id="5030534239781345667" at="93,119,94,71" concept="1" />
+      <node id="5030534239781356172" at="94,71,95,63" concept="1" />
+      <node id="5030534239781363117" at="95,63,96,65" concept="1" />
+      <node id="5030534239781370800" at="96,65,97,63" concept="1" />
+      <node id="5030534239781345666" at="97,63,98,22" concept="5" />
+      <node id="5030534239781345666" at="102,0,103,0" concept="6" trace="Synopsis$nM" />
+      <node id="5030534239781345666" at="106,0,107,0" concept="6" trace="CFG_scale$2OV7" />
+      <node id="5030534239781345666" at="107,0,108,0" concept="6" trace="width$x1Oh" />
+      <node id="5030534239781345666" at="108,0,109,0" concept="6" trace="height$meRg" />
+      <node id="5030534239781345666" at="109,0,110,0" concept="6" trace="steps$er3Y" />
+      <node id="5030534239781345666" at="20,0,23,0" concept="0" trace="Synopsis_Constraints#()V" />
+      <node id="5030534239781345667" at="25,0,28,0" concept="0" trace="CFG_scale_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="5030534239781345667" at="30,99,33,7" concept="2" />
+      <node id="5030534239781437304" at="36,85,39,7" concept="2" />
+      <node id="5030534239781356172" at="44,0,47,0" concept="0" trace="Width_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="5030534239781356172" at="49,100,52,7" concept="2" />
+      <node id="5030534239781356172" at="55,0,58,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="5030534239781363117" at="60,0,63,0" concept="0" trace="Height_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="5030534239781363117" at="65,100,68,7" concept="2" />
+      <node id="5030534239781363117" at="71,0,74,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="5030534239781370800" at="76,0,79,0" concept="0" trace="Steps_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="5030534239781370800" at="81,100,84,7" concept="2" />
+      <node id="5030534239781370800" at="87,0,90,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="5030534239781345667" at="36,0,42,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="5030534239781345667" at="28,0,36,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="5030534239781356172" at="47,0,55,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="5030534239781363117" at="63,0,71,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="5030534239781370800" at="79,0,87,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="5030534239781345666" at="91,0,100,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="5030534239781345666" at="20,33,21,32" />
+      <scope id="5030534239781345667" at="25,64,26,65" />
+      <scope id="5030534239781345667" at="31,53,32,158" />
+      <scope id="5030534239781437306" at="37,34,38,54" />
+      <scope id="5030534239781356172" at="44,60,45,61" />
+      <scope id="5030534239781356172" at="50,53,51,158" />
+      <scope id="5030534239781356274" at="55,82,56,32" />
+      <scope id="5030534239781363117" at="60,61,61,62" />
+      <scope id="5030534239781363117" at="66,53,67,158" />
+      <scope id="5030534239781363191" at="71,82,72,32" />
+      <scope id="5030534239781370800" at="76,60,77,61" />
+      <scope id="5030534239781370800" at="82,53,83,158" />
+      <scope id="5030534239781370887" at="87,82,88,32" />
+      <scope id="5030534239781345666" at="20,0,23,0" />
+      <scope id="5030534239781345667" at="25,0,28,0">
+        <var name="container" id="5030534239781345667" />
+      </scope>
+      <scope id="5030534239781356172" at="44,0,47,0">
+        <var name="container" id="5030534239781356172" />
+      </scope>
+      <scope id="5030534239781356172" at="55,0,58,0">
+        <var name="node" id="5030534239781356172" />
+        <var name="propertyValue" id="5030534239781356172" />
+      </scope>
+      <scope id="5030534239781363117" at="60,0,63,0">
+        <var name="container" id="5030534239781363117" />
+      </scope>
+      <scope id="5030534239781363117" at="71,0,74,0">
+        <var name="node" id="5030534239781363117" />
+        <var name="propertyValue" id="5030534239781363117" />
+      </scope>
+      <scope id="5030534239781370800" at="76,0,79,0">
+        <var name="container" id="5030534239781370800" />
+      </scope>
+      <scope id="5030534239781370800" at="87,0,90,0">
+        <var name="node" id="5030534239781370800" />
+        <var name="propertyValue" id="5030534239781370800" />
+      </scope>
+      <scope id="5030534239781345711" at="36,85,40,18" />
+      <scope id="5030534239781345667" at="29,109,34,20">
+        <var name="result" id="5030534239781345667" />
+      </scope>
+      <scope id="5030534239781356172" at="48,109,53,20">
+        <var name="result" id="5030534239781356172" />
+      </scope>
+      <scope id="5030534239781363117" at="64,109,69,20">
+        <var name="result" id="5030534239781363117" />
+      </scope>
+      <scope id="5030534239781370800" at="80,109,85,20">
+        <var name="result" id="5030534239781370800" />
+      </scope>
+      <scope id="5030534239781345667" at="36,0,42,0">
+        <var name="node" id="5030534239781345667" />
+        <var name="propertyValue" id="5030534239781345667" />
+      </scope>
+      <scope id="5030534239781345666" at="92,84,98,22">
+        <var name="properties" id="5030534239781345666" />
+      </scope>
+      <scope id="5030534239781345667" at="28,0,36,0">
+        <var name="checkingNodeContext" id="5030534239781345667" />
+        <var name="node" id="5030534239781345667" />
+        <var name="propertyValue" id="5030534239781345667" />
+      </scope>
+      <scope id="5030534239781356172" at="47,0,55,0">
+        <var name="checkingNodeContext" id="5030534239781356172" />
+        <var name="node" id="5030534239781356172" />
+        <var name="propertyValue" id="5030534239781356172" />
+      </scope>
+      <scope id="5030534239781363117" at="63,0,71,0">
+        <var name="checkingNodeContext" id="5030534239781363117" />
+        <var name="node" id="5030534239781363117" />
+        <var name="propertyValue" id="5030534239781363117" />
+      </scope>
+      <scope id="5030534239781370800" at="79,0,87,0">
+        <var name="checkingNodeContext" id="5030534239781370800" />
+        <var name="node" id="5030534239781370800" />
+        <var name="propertyValue" id="5030534239781370800" />
+      </scope>
+      <scope id="5030534239781345666" at="91,0,100,0" />
+      <unit id="5030534239781345666" at="101,0,104,0" name="DiffusersSynopsis.constraints.Synopsis_Constraints$CONCEPTS" />
+      <unit id="5030534239781345666" at="105,0,111,0" name="DiffusersSynopsis.constraints.Synopsis_Constraints$PROPS" />
+      <unit id="5030534239781356172" at="43,0,59,0" name="DiffusersSynopsis.constraints.Synopsis_Constraints$Width_Property" />
+      <unit id="5030534239781363117" at="59,0,75,0" name="DiffusersSynopsis.constraints.Synopsis_Constraints$Height_Property" />
+      <unit id="5030534239781370800" at="75,0,91,0" name="DiffusersSynopsis.constraints.Synopsis_Constraints$Steps_Property" />
+      <unit id="5030534239781345667" at="24,0,43,0" name="DiffusersSynopsis.constraints.Synopsis_Constraints$CFG_scale_Property" />
+      <unit id="5030534239781345666" at="19,0,112,0" name="DiffusersSynopsis.constraints.Synopsis_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

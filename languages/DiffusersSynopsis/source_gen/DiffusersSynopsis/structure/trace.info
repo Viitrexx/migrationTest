@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,30,0" name="DiffusersSynopsis.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,28,0" name="DiffusersSynopsis.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="18,0,76,0" name="DiffusersSynopsis.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:c7c563d7-3ff3-4511-b4ec-8885143ec458(DiffusersSynopsis.structure)/5030534239781106041">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="5030534239781106041" at="12,0,13,0" concept="2" trace="props_Synopsis" />
+      <node id="5030534239781106041" at="20,37,21,76" concept="5" />
+      <node id="5030534239781106041" at="21,76,22,35" concept="1" />
+      <node id="5030534239781106041" at="22,35,23,40" concept="1" />
+      <node id="5030534239781106041" at="24,9,25,30" concept="6" />
+      <node id="5030534239781106041" at="19,42,24,9" concept="3" />
+      <scope id="5030534239781106041" at="20,37,23,40">
+        <var name="cpb" id="5030534239781106041" />
+      </scope>
+      <scope id="5030534239781106041" at="19,42,25,30" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="5030534239781106041" at="12,0,13,0" concept="7" trace="Synopsis" />
+      <node id="5030534239781106041" at="15,116,16,47" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5030534239781106041" at="19,0,20,0" concept="2" trace="myConceptSynopsis" />
+      <node id="5030534239781106041" at="42,42,43,33" concept="6" />
+      <node id="5030534239781106041" at="58,66,59,160" concept="5" />
+      <node id="5030534239781106041" at="59,160,60,33" concept="1" />
+      <node id="5030534239781106041" at="60,33,61,71" concept="1" />
+      <node id="5030534239781106041" at="61,71,62,104" concept="1" />
+      <node id="5030534239781106041" at="62,104,63,17" concept="1" />
+      <node id="5030534239781212727" at="63,17,64,112" concept="1" />
+      <node id="5030534239781213669" at="64,112,65,121" concept="1" />
+      <node id="5030534239781214140" at="65,121,66,112" concept="1" />
+      <node id="5030534239781214508" at="66,112,67,178" concept="1" />
+      <node id="5030534239781215359" at="67,178,68,180" concept="1" />
+      <node id="5030534239781220208" at="68,180,69,113" concept="1" />
+      <node id="5030534239781220528" at="69,113,70,112" concept="1" />
+      <node id="5030534239781220953" at="70,112,71,116" concept="1" />
+      <node id="5030534239781222837" at="71,116,72,111" concept="1" />
+      <node id="5030534239781106041" at="72,111,73,22" concept="6" />
+      <node id="5030534239781106041" at="58,0,75,0" concept="8" trace="createDescriptorForSynopsis#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5030534239781106041" at="42,42,43,33" />
+      <scope id="5030534239781106041" at="58,66,73,22">
+        <var name="b" id="5030534239781106041" />
+      </scope>
+      <scope id="5030534239781106041" at="58,0,75,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c7c563d7-3ff3-4511-b4ec-8885143ec458(DiffusersSynopsis.structure)/5030534239781214982">
+    <file name="EnumerationDescriptor_Sampler.java">
+      <node id="5030534239781214982" at="14,42,15,175" concept="9" />
+      <node id="5030534239781214983" at="18,0,19,0" concept="2" trace="myMember_EulerA_0" />
+      <node id="5030534239781215153" at="19,0,20,0" concept="2" trace="myMember_Heun_0" />
+      <node id="5030534239781215156" at="20,0,21,0" concept="2" trace="myMember_DDIM_0" />
+      <node id="5030534239781215161" at="21,0,22,0" concept="2" trace="myMember_DPMpp2M_0" />
+      <node id="5030534239781215168" at="22,0,23,0" concept="2" trace="myMember_DPMpp2SaKarras_0" />
+      <node id="5030534239781214982" at="24,0,25,0" concept="2" trace="myIndex" />
+      <node id="5030534239781214982" at="25,0,26,0" concept="2" trace="myMembers" />
+      <node id="5030534239781214982" at="29,62,30,16" concept="6" />
+      <node id="5030534239781214982" at="35,68,36,21" concept="6" />
+      <node id="5030534239781214982" at="42,29,43,18" concept="6" />
+      <node id="5030534239781214983" at="46,20,47,33" concept="6" />
+      <node id="5030534239781215153" at="48,18,49,31" concept="6" />
+      <node id="5030534239781215156" at="50,18,51,31" concept="6" />
+      <node id="5030534239781215161" at="52,21,53,34" concept="6" />
+      <node id="5030534239781215168" at="54,28,55,41" concept="6" />
+      <node id="5030534239781214982" at="56,5,57,16" concept="6" />
+      <node id="5030534239781214982" at="62,73,63,39" concept="5" />
+      <node id="5030534239781214982" at="64,22,65,18" concept="6" />
+      <node id="5030534239781214982" at="66,5,67,32" concept="6" />
+      <node id="5030534239781214982" at="14,0,17,0" concept="0" trace="EnumerationDescriptor_Sampler#()V" />
+      <node id="5030534239781214982" at="41,88,44,5" concept="3" />
+      <node id="5030534239781214982" at="63,39,66,5" concept="3" />
+      <node id="5030534239781214982" at="27,0,32,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="5030534239781214982" at="33,0,38,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="5030534239781214982" at="60,0,69,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="5030534239781214982" at="44,5,56,5" concept="10" />
+      <node id="5030534239781214982" at="39,0,59,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="5030534239781214982" at="14,42,15,175" />
+      <scope id="5030534239781214982" at="29,62,30,16" />
+      <scope id="5030534239781214982" at="35,68,36,21" />
+      <scope id="5030534239781214982" at="42,29,43,18" />
+      <scope id="5030534239781214983" at="46,20,47,33" />
+      <scope id="5030534239781215153" at="48,18,49,31" />
+      <scope id="5030534239781215156" at="50,18,51,31" />
+      <scope id="5030534239781215161" at="52,21,53,34" />
+      <scope id="5030534239781215168" at="54,28,55,41" />
+      <scope id="5030534239781214982" at="64,22,65,18" />
+      <scope id="5030534239781214982" at="14,0,17,0" />
+      <scope id="5030534239781214982" at="27,0,32,0" />
+      <scope id="5030534239781214982" at="33,0,38,0" />
+      <scope id="5030534239781214982" at="62,73,67,32">
+        <var name="index" id="5030534239781214982" />
+      </scope>
+      <scope id="5030534239781214982" at="60,0,69,0">
+        <var name="idValue" id="5030534239781214982" />
+      </scope>
+      <scope id="5030534239781214982" at="41,88,57,16" />
+      <scope id="5030534239781214982" at="39,0,59,0">
+        <var name="memberName" id="5030534239781214982" />
+      </scope>
+      <unit id="5030534239781214982" at="12,0,70,0" name="DiffusersSynopsis.structure.EnumerationDescriptor_Sampler" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="5030534239781214982" at="20,0,21,0" concept="2" trace="myEnumerationSampler" />
+    </file>
+  </root>
+</debug-info>
+

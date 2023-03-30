@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <root nodeRef="r:67f59364-0488-4da0-882b-f3809584f142(txtPersistence.txtPersistence)/5030534239781592945">
+    <file name="txtModelPersistence.java">
+      <node id="9148961869924854875" at="30,0,31,0" concept="7" trace="TXT_EXTENSION" />
+      <node id="9148961869924861251" at="31,0,32,0" concept="7" trace="TXT_TYPE" />
+      <node id="9148961869924866423" at="33,0,34,0" concept="2" trace="myPersistenceFacade" />
+      <node id="8006535131967473919" at="36,55,37,93" concept="6" />
+      <node id="1581198836068399726" at="43,30,44,55" concept="9" />
+      <node id="8980588061390109478" at="45,5,46,76" concept="9" />
+      <node id="9148961869924913245" at="52,30,53,55" concept="9" />
+      <node id="8980588061390275339" at="54,5,55,76" concept="5" />
+      <node id="8980588061390302901" at="55,76,56,36" concept="5" />
+      <node id="8980588061390324698" at="57,75,58,119" concept="1" />
+      <node id="8980588061390355810" at="59,5,60,89" concept="5" />
+      <node id="8980588061390237616" at="60,89,61,61" concept="6" />
+      <node id="9148961869924915363" at="66,30,67,55" concept="9" />
+      <node id="8980588061390402480" at="68,5,69,54" concept="1" />
+      <node id="9148961869924842490" at="74,37,75,53" concept="6" />
+      <node id="9148961869924833932" at="83,36,84,50" concept="6" />
+      <node id="9148961869924895202" at="91,61,92,47" concept="6" />
+      <node id="1581198836068399720" at="42,180,45,5" concept="3" />
+      <node id="9148961869924913239" at="51,148,54,5" concept="3" />
+      <node id="8980588061390312911" at="56,36,59,5" concept="3" />
+      <node id="9148961869924915357" at="65,110,68,5" concept="3" />
+      <node id="5342042266637396887" at="35,0,39,0" concept="4" trace="supports#(Lorg/jetbrains/mps/openapi/persistence/DataSource;)Z" />
+      <node id="5342042266637397013" at="72,0,77,0" concept="4" trace="getType#()Lorg/jetbrains/mps/openapi/persistence/ModelFactoryType;" />
+      <node id="9148961869924828885" at="81,0,86,0" concept="4" trace="getFormatTitle#()Ljava/lang/String;" />
+      <node id="5342042266637397031" at="88,0,94,0" concept="4" trace="getPreferredDataSourceTypes#()Ljava/util/List;" />
+      <node id="5342042266637396996" at="64,0,71,0" concept="4" trace="save#(Lorg/jetbrains/mps/openapi/model/SModel;Lorg/jetbrains/mps/openapi/persistence/DataSource;)V" />
+      <node id="5342042266637396907" at="40,0,48,0" concept="4" trace="create#(Lorg/jetbrains/mps/openapi/persistence/DataSource;Lorg/jetbrains/mps/openapi/model/SModelName;null)Lorg/jetbrains/mps/openapi/model/SModel;" />
+      <node id="5342042266637396955" at="49,0,63,0" concept="4" trace="load#(Lorg/jetbrains/mps/openapi/persistence/DataSource;null)Lorg/jetbrains/mps/openapi/model/SModel;" />
+      <scope id="5342042266637396903" at="36,55,37,93" />
+      <scope id="1581198836068399725" at="43,30,44,55" />
+      <scope id="9148961869924913244" at="52,30,53,55" />
+      <scope id="8980588061390312913" at="57,75,58,119" />
+      <scope id="9148961869924915362" at="66,30,67,55" />
+      <scope id="5342042266637397027" at="74,37,75,53" />
+      <scope id="9148961869924828893" at="83,36,84,50" />
+      <scope id="5342042266637397073" at="91,61,92,47" />
+      <scope id="5342042266637396887" at="35,0,39,0">
+        <var name="source" id="5342042266637396891" />
+      </scope>
+      <scope id="5342042266637396951" at="42,180,46,76" />
+      <scope id="5342042266637397011" at="65,110,69,54" />
+      <scope id="5342042266637397013" at="72,0,77,0" />
+      <scope id="9148961869924828885" at="81,0,86,0" />
+      <scope id="5342042266637397031" at="88,0,94,0" />
+      <scope id="5342042266637396996" at="64,0,71,0">
+        <var name="model" id="5342042266637397000" />
+        <var name="source" id="5342042266637397003" />
+      </scope>
+      <scope id="5342042266637396907" at="40,0,48,0">
+        <var name="name" id="5342042266637396915" />
+        <var name="options" id="5342042266637396918" />
+        <var name="source" id="5342042266637396912" />
+      </scope>
+      <scope id="5342042266637396992" at="51,148,61,61">
+        <var name="id" id="8980588061390275337" />
+        <var name="name" id="8980588061390302902" />
+        <var name="ref" id="8980588061390355808" />
+      </scope>
+      <scope id="5342042266637396955" at="49,0,63,0">
+        <var name="options" id="5342042266637396963" />
+        <var name="source" id="5342042266637396960" />
+      </scope>
+      <unit id="9148961869924815123" at="78,0,87,0" name="txtPersistence.txtPersistence.txtModelPersistence$DiffusersSynopsisPersistenceType" />
+      <unit id="5030534239781592945" at="29,0,95,0" name="txtPersistence.txtPersistence.txtModelPersistence" />
+    </file>
+  </root>
+  <root nodeRef="r:67f59364-0488-4da0-882b-f3809584f142(txtPersistence.txtPersistence)/5030534239781638595">
+    <file name="DiffusersSynopsisModelDescriptor.java">
+      <node id="5342042266637479605" at="22,116,23,38" concept="8" />
+      <node id="8980588061390425149" at="28,51,29,222" concept="6" />
+      <node id="8669939106694358235" at="33,54,34,128" concept="6" />
+      <node id="5342042266637447881" at="48,35,49,17" concept="6" />
+      <node id="5342042266637472300" at="22,0,25,0" concept="0" trace="DiffusersSynopsisModelDescriptor#(Lorg/jetbrains/mps/openapi/model/SModelReference;Lorg/jetbrains/mps/openapi/persistence/DataSource;)V" />
+      <node id="5342042266637447836" at="37,0,40,0" concept="4" trace="rename#(Ljava/lang/String;Z)V" />
+      <node id="5342042266637447882" at="52,0,55,0" concept="4" trace="reloadFromSource#()V" />
+      <node id="8669939106694346038" at="32,0,36,0" concept="4" trace="importedLanguageIds#()Ljava/util/Collection;" />
+      <node id="5342042266637447871" at="47,0,51,0" concept="4" trace="needsReloading#()Z" />
+      <node id="5342042266637447821" at="26,0,31,0" concept="4" trace="createModel#()Ljetbrains/mps/smodel/ModelLoadResult;" />
+      <node id="5342042266637447855" at="41,0,46,0" concept="4" trace="updateTimestamp#()V" />
+      <scope id="5342042266637447853" at="38,57,38,57" />
+      <scope id="5342042266637447869" at="44,33,44,33" />
+      <scope id="5342042266637447896" at="53,34,53,34" />
+      <scope id="5342042266637472304" at="22,116,23,38" />
+      <scope id="5342042266637447832" at="28,51,29,222" />
+      <scope id="8669939106694346041" at="33,54,34,128" />
+      <scope id="5342042266637447878" at="48,35,49,17" />
+      <scope id="5342042266637472300" at="22,0,25,0">
+        <var name="dataSource" id="5342042266637473919" />
+        <var name="modelReference" id="5342042266637473196" />
+      </scope>
+      <scope id="5342042266637447836" at="37,0,40,0">
+        <var name="b" id="5342042266637447843" />
+        <var name="string" id="5342042266637447840" />
+      </scope>
+      <scope id="5342042266637447882" at="52,0,55,0" />
+      <scope id="8669939106694346038" at="32,0,36,0" />
+      <scope id="5342042266637447871" at="47,0,51,0" />
+      <scope id="5342042266637447821" at="26,0,31,0" />
+      <scope id="5342042266637447855" at="41,0,46,0" />
+      <unit id="5030534239781638595" at="21,0,56,0" name="txtPersistence.txtPersistence.DiffusersSynopsisModelDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:67f59364-0488-4da0-882b-f3809584f142(txtPersistence.txtPersistence)/5030534239781687555">
+    <file name="TxtConverter.java">
+      <unit id="5030534239781687555" at="6,0,8,0" name="txtPersistence.txtPersistence.TxtConverter" />
+    </file>
+  </root>
+</debug-info>
+

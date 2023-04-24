@@ -131,38 +131,6 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-txtPersistence-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/languages" />
-    <mkdir dir="${build.tmp}/default/ideaPlugin.jar" />
-    <mkdir dir="${build.tmp}/default/ideaPlugin.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/ideaPlugin.jar/META-INF/module.xml">
-      <module namespace="ideaPlugin" type="solution" uuid="76f2191f-0a72-41b3-a3d4-57099860f54d">
-        <dependencies />
-        <uses>
-          <language id="l:479c7a8c-02f9-43b5-9139-d910cb22f298:jetbrains.mps.core.xml" />
-        </uses>
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="ideaPlugin-src.jar" descriptor="ideaPlugin.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/languages/ideaPlugin.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/ideaPlugin" />
-      <fileset dir="${basedir}/solutions/ideaPlugin/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/ideaPlugin.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-ideaPlugin-models">
-      <fileset dir="${basedir}/solutions/ideaPlugin/models" includes="**/*.mps, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/languages/ideaPlugin-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/solutions/ideaPlugin/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${basedir}/solutions/ideaPlugin/ideaPlugin.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-ideaPlugin-models" prefix="module/models" />
-    </jar>
     <mkdir dir="${build.tmp}/default/DiffusersSynopsis.jar" />
     <mkdir dir="${build.tmp}/default/DiffusersSynopsis.jar/META-INF" />
     <echoxml file="${build.tmp}/default/DiffusersSynopsis.jar/META-INF/module.xml">
@@ -314,7 +282,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.DiffusersSynopsis, java.compile.DiffusersSynopsis.generator, java.compile.txtPersistence, java.compile.ideaPlugin, java.compile.migrationTest.build" />
+  <target name="compileJava" depends="java.compile.DiffusersSynopsis, java.compile.DiffusersSynopsis.generator, java.compile.txtPersistence, java.compile.migrationTest.build" />
   
   <target name="processResources" />
   
@@ -446,7 +414,6 @@
       <library file="${artifacts.mps}/languages/xml/jetbrains.mps.core.xml.jar" />
       <chunk>
         <module file="${basedir}/languages/DiffusersSynopsis/DiffusersSynopsis.mpl" />
-        <module file="${basedir}/solutions/ideaPlugin/ideaPlugin.msd" />
         <module file="${basedir}/solutions/migrationTest.build/migrationTest.build.msd" />
       </chunk>
       <chunk>
@@ -622,18 +589,6 @@
     </javac>
   </target>
   
-  <target name="java.compile.ideaPlugin">
-    <mkdir dir="${basedir}/solutions/ideaPlugin/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/ideaPlugin" />
-    <javac destdir="${build.tmp}/java/out/ideaPlugin" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="17" target="17">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/solutions/ideaPlugin/source_gen" />
-      </src>
-      <classpath />
-    </javac>
-  </target>
-  
   <target name="java.compile.migrationTest.build">
     <mkdir dir="${basedir}/solutions/migrationTest.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/migrationTest.build" />
@@ -649,7 +604,6 @@
   <target name="cleanSources">
     <delete dir="${basedir}/languages/DiffusersSynopsis/source_gen" />
     <delete dir="${basedir}/languages/DiffusersSynopsis/generator/source_gen" />
-    <delete dir="${basedir}/solutions/ideaPlugin/source_gen" />
     <delete dir="${basedir}/solutions/migrationTest.build/source_gen" />
     <delete dir="${basedir}/solutions/txtPersistence/source_gen" />
   </target>

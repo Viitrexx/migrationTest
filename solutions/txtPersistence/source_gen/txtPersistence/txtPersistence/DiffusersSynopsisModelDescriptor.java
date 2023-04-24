@@ -51,7 +51,7 @@ public class DiffusersSynopsisModelDescriptor extends EditableModelDescriptor {
       try {
         return new ModelLoadResult(readModel(), ModelLoadingState.FULLY_LOADED);
       } catch (ModelLoadException e) {
-        LogContext.with(DiffusersSynopsisModelDescriptor.class, null, null).error(e.getMessage() + " " + e.toString());
+        LogContext.with(DiffusersSynopsisModelDescriptor.class, null, null).error(e.getMessage());
         return new ModelLoadResult<>(new DefaultSModel.InvalidDefaultSModel(this.getReference(), new ModelReadException("Something went wrong while loading", e)), ModelLoadingState.NOT_LOADED);
       }
     }
@@ -73,6 +73,7 @@ public class DiffusersSynopsisModelDescriptor extends EditableModelDescriptor {
     } catch (IOException e) {
       throw new ModelLoadException("Could not read model " + ref, new ArrayList<org.jetbrains.mps.openapi.model.SModel.Problem>(), e);
     } finally {
+      FileUtil.closeFileSafe(in);
     }
   }
 
@@ -90,9 +91,14 @@ public class DiffusersSynopsisModelDescriptor extends EditableModelDescriptor {
     LogContext.with(DiffusersSynopsisModelDescriptor.class, null, null).info("writeModel()");
     Iterator<SNode> it = modelData.getRootNodes().iterator();
     SNode root = (it.hasNext() ? it.next() : null);
+    OutputStream stream = null;
     try {
-      OutputStream stream = new BufferedOutputStream(((StreamDataSource) this.getSource()).openOutputStream());
+      stream = new BufferedOutputStream(((StreamDataSource) this.getSource()).openOutputStream());
       char[] content = "lol".toCharArray();
+      if (root != null && root.getConcept().getName().equals("Synopsis")) {
+        SNode syn = ((SNode) root);
+        content = SPropertyOperations.getString(syn, PROPS.name$MnvL).toCharArray();
+      }
       byte[] contentByte = new byte[content.length];
       for (int i = 0; i < content.length; i++) {
         contentByte[i] = ((byte) content[i]);
@@ -104,6 +110,7 @@ public class DiffusersSynopsisModelDescriptor extends EditableModelDescriptor {
     } catch (IOException e) {
       new ModelSaveException("Could not write model " + this.getName(), new ArrayList<org.jetbrains.mps.openapi.model.SModel.Problem>(), e);
     } finally {
+      FileUtil.closeFileSafe(stream);
     }
   }
 

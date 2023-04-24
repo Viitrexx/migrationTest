@@ -265,9 +265,6 @@
                 <property role="3MwjfP" value="languages" />
               </node>
             </node>
-            <node concept="L2wRC" id="Tk6tATSJHr" role="39821P">
-              <ref role="L2wRA" node="4ng33NSBLWm" resolve="ideaPlugin" />
-            </node>
             <node concept="L2wRC" id="Tk6tATSJHw" role="39821P">
               <ref role="L2wRA" node="4ng33NSBHO4" resolve="DiffusersSynopsis" />
             </node>
@@ -334,9 +331,6 @@
       <property role="m$_wk" value="txtPersistencePlugin" />
       <node concept="m$_yB" id="3Yjdmt9yc4T" role="m$_yh">
         <ref role="m$_yA" node="4ng33NSBHO4" resolve="DiffusersSynopsis" />
-      </node>
-      <node concept="m$_yB" id="3Yjdmt9yc4X" role="m$_yh">
-        <ref role="m$_yA" node="4ng33NSBLWm" resolve="ideaPlugin" />
       </node>
       <node concept="m$_yB" id="3Yjdmt9yc5k" role="m$_yh">
         <ref role="m$_yA" node="4CyJMdu3fun" resolve="txtPersistence" />
@@ -510,43 +504,6 @@
         <node concept="1SiIV0" id="76e5yjGPFWZ" role="3bR37C">
           <node concept="3bR9La" id="76e5yjGPFX0" role="1SiIV1">
             <ref role="3bR37D" node="4ng33NSBHO4" resolve="DiffusersSynopsis" />
-          </node>
-        </node>
-      </node>
-      <node concept="1E1JtA" id="4ng33NSBLWm" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="ideaPlugin" />
-        <property role="3LESm3" value="76f2191f-0a72-41b3-a3d4-57099860f54d" />
-        <node concept="55IIr" id="4ng33NSBLWp" role="3LF7KH">
-          <node concept="2Ry0Ak" id="4ng33NSCBUH" role="iGT6I">
-            <property role="2Ry0Am" value="solutions" />
-            <node concept="2Ry0Ak" id="4ng33NSCBUM" role="2Ry0An">
-              <property role="2Ry0Am" value="ideaPlugin" />
-              <node concept="2Ry0Ak" id="4ng33NSCBUR" role="2Ry0An">
-                <property role="2Ry0Am" value="ideaPlugin.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1BupzO" id="4ng33NSCBV6" role="3bR31x">
-          <property role="3ZfqAx" value="models" />
-          <property role="1Hdu6h" value="true" />
-          <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="4ng33NSCBV7" role="1HemKq">
-            <node concept="55IIr" id="4ng33NSCBV2" role="3LXTmr">
-              <node concept="2Ry0Ak" id="4ng33NSCBV3" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="4ng33NSCBV4" role="2Ry0An">
-                  <property role="2Ry0Am" value="ideaPlugin" />
-                  <node concept="2Ry0Ak" id="4ng33NSCBV5" role="2Ry0An">
-                    <property role="2Ry0Am" value="models" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="4ng33NSCBV8" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
           </node>
         </node>
       </node>

@@ -27,6 +27,9 @@
     </language>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
       <concept id="5481553824944787378" name="jetbrains.mps.build.structure.BuildSourceProjectRelativePath" flags="ng" index="55IIr" />
+      <concept id="9126048691955220717" name="jetbrains.mps.build.structure.BuildLayout_File" flags="ng" index="28jJK3">
+        <child id="9126048691955220762" name="path" index="28jJRO" />
+      </concept>
       <concept id="7321017245476976379" name="jetbrains.mps.build.structure.BuildRelativePath" flags="ng" index="iG8Mu">
         <child id="7321017245477039051" name="compositePart" index="iGT6I" />
       </concept>
@@ -241,6 +244,20 @@
             <node concept="L2wRC" id="3Yjdmt9xXtK" role="39821P">
               <ref role="L2wRA" node="4CyJMdu3fun" resolve="txtPersistence" />
             </node>
+            <node concept="28jJK3" id="7o0oBpBGfCw" role="39821P">
+              <node concept="398BVA" id="7o0oBpBGfCC" role="28jJRO">
+                <ref role="398BVh" node="4ng33NSBHNW" resolve="mps_home" />
+                <node concept="2Ry0Ak" id="7o0oBpBGfCI" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="7o0oBpBGfCN" role="2Ry0An">
+                    <property role="2Ry0Am" value="baseLanguage" />
+                    <node concept="2Ry0Ak" id="7o0oBpBGfCS" role="2Ry0An">
+                      <property role="2Ry0Am" value="jetbrains.mps.baseLanguage.logging.runtime.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="398223" id="Tk6tATSJHg" role="39821P">
             <node concept="3_J27D" id="Tk6tATSJHi" role="Nbhlr">
@@ -248,19 +265,11 @@
                 <property role="3MwjfP" value="languages" />
               </node>
             </node>
-            <node concept="1X3_iC" id="2Ah3gYgUMpZ" role="lGtFl">
-              <property role="3V$3am" value="children" />
-              <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/4701820937132344003/7389400916848037006" />
-              <node concept="L2wRC" id="Tk6tATSJHr" role="8Wnug">
-                <ref role="L2wRA" node="4ng33NSBLWm" resolve="ideaPlugin" />
-              </node>
+            <node concept="L2wRC" id="Tk6tATSJHr" role="39821P">
+              <ref role="L2wRA" node="4ng33NSBLWm" resolve="ideaPlugin" />
             </node>
-            <node concept="1X3_iC" id="4EI1loxb29z" role="lGtFl">
-              <property role="3V$3am" value="children" />
-              <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/4701820937132344003/7389400916848037006" />
-              <node concept="L2wRC" id="Tk6tATSJHw" role="8Wnug">
-                <ref role="L2wRA" node="4ng33NSBHO4" resolve="DiffusersSynopsis" />
-              </node>
+            <node concept="L2wRC" id="Tk6tATSJHw" role="39821P">
+              <ref role="L2wRA" node="4ng33NSBHO4" resolve="DiffusersSynopsis" />
             </node>
           </node>
           <node concept="pUk6w" id="Tk6tATSJG$" role="pUk7w" />
@@ -323,19 +332,11 @@
     </node>
     <node concept="m$_wf" id="3Yjdmt9yc1T" role="3989C9">
       <property role="m$_wk" value="txtPersistencePlugin" />
-      <node concept="1X3_iC" id="4EI1loxb29s" role="lGtFl">
-        <property role="3V$3am" value="content" />
-        <property role="3V$3ak" value="0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314498932/6592112598314499050" />
-        <node concept="m$_yB" id="3Yjdmt9yc4T" role="8Wnug">
-          <ref role="m$_yA" node="4ng33NSBHO4" resolve="DiffusersSynopsis" />
-        </node>
+      <node concept="m$_yB" id="3Yjdmt9yc4T" role="m$_yh">
+        <ref role="m$_yA" node="4ng33NSBHO4" resolve="DiffusersSynopsis" />
       </node>
-      <node concept="1X3_iC" id="2Ah3gYgUMoC" role="lGtFl">
-        <property role="3V$3am" value="content" />
-        <property role="3V$3ak" value="0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314498932/6592112598314499050" />
-        <node concept="m$_yB" id="3Yjdmt9yc4X" role="8Wnug">
-          <ref role="m$_yA" node="4ng33NSBLWm" resolve="ideaPlugin" />
-        </node>
+      <node concept="m$_yB" id="3Yjdmt9yc4X" role="m$_yh">
+        <ref role="m$_yA" node="4ng33NSBLWm" resolve="ideaPlugin" />
       </node>
       <node concept="m$_yB" id="3Yjdmt9yc5k" role="m$_yh">
         <ref role="m$_yA" node="4CyJMdu3fun" resolve="txtPersistence" />
@@ -352,7 +353,7 @@
       </node>
       <node concept="3_J27D" id="3Yjdmt9yc1Z" role="m$_w8">
         <node concept="3Mxwew" id="3Yjdmt9yc4n" role="3MwsjC">
-          <property role="3MwjfP" value="0.11" />
+          <property role="3MwjfP" value="0.1" />
         </node>
       </node>
       <node concept="2pNNFK" id="3Yjdmt9yc3s" role="20twgj">
@@ -389,75 +390,71 @@
     </node>
     <node concept="2G$12M" id="4ng33NSBHO5" role="3989C9">
       <property role="TrG5h" value="migrationTest" />
-      <node concept="1X3_iC" id="4s7LCxCJCtI" role="lGtFl">
-        <property role="3V$3am" value="modules" />
-        <property role="3V$3ak" value="0cf935df-4699-4e9c-a132-fa109541cba3/1500819558095907805/1500819558095907806" />
-        <node concept="1E1JtD" id="4ng33NSBHO4" role="8Wnug">
-          <property role="BnDLt" value="true" />
-          <property role="TrG5h" value="DiffusersSynopsis" />
-          <property role="3LESm3" value="6d5fbab6-0568-4ec4-bb6a-34c38dc971e3" />
-          <node concept="55IIr" id="4ng33NSBHNZ" role="3LF7KH">
-            <node concept="2Ry0Ak" id="4ng33NSBHO0" role="iGT6I">
-              <property role="2Ry0Am" value="languages" />
-              <node concept="2Ry0Ak" id="4ng33NSBHO1" role="2Ry0An">
-                <property role="2Ry0Am" value="DiffusersSynopsis" />
-                <node concept="2Ry0Ak" id="4ng33NSBHO2" role="2Ry0An">
-                  <property role="2Ry0Am" value="DiffusersSynopsis.mpl" />
-                </node>
+      <node concept="1E1JtD" id="4ng33NSBHO4" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="DiffusersSynopsis" />
+        <property role="3LESm3" value="6d5fbab6-0568-4ec4-bb6a-34c38dc971e3" />
+        <node concept="55IIr" id="4ng33NSBHNZ" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4ng33NSBHO0" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="4ng33NSBHO1" role="2Ry0An">
+              <property role="2Ry0Am" value="DiffusersSynopsis" />
+              <node concept="2Ry0Ak" id="4ng33NSBHO2" role="2Ry0An">
+                <property role="2Ry0Am" value="DiffusersSynopsis.mpl" />
               </node>
             </node>
           </node>
-          <node concept="1SiIV0" id="4ng33NSBHOp" role="3bR37C">
-            <node concept="3bR9La" id="4ng33NSBHOq" role="1SiIV1">
-              <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
-            </node>
+        </node>
+        <node concept="1SiIV0" id="4ng33NSBHOp" role="3bR37C">
+          <node concept="3bR9La" id="4ng33NSBHOq" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
           </node>
-          <node concept="1BupzO" id="4ng33NSBHOv" role="3bR31x">
-            <property role="3ZfqAx" value="models" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="4ng33NSBHOw" role="1HemKq">
-              <node concept="55IIr" id="4ng33NSBHOr" role="3LXTmr">
-                <node concept="2Ry0Ak" id="4ng33NSBHOs" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="4ng33NSBHOt" role="2Ry0An">
-                    <property role="2Ry0Am" value="DiffusersSynopsis" />
-                    <node concept="2Ry0Ak" id="4ng33NSBHOu" role="2Ry0An">
-                      <property role="2Ry0Am" value="models" />
-                    </node>
+        </node>
+        <node concept="1BupzO" id="4ng33NSBHOv" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4ng33NSBHOw" role="1HemKq">
+            <node concept="55IIr" id="4ng33NSBHOr" role="3LXTmr">
+              <node concept="2Ry0Ak" id="4ng33NSBHOs" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4ng33NSBHOt" role="2Ry0An">
+                  <property role="2Ry0Am" value="DiffusersSynopsis" />
+                  <node concept="2Ry0Ak" id="4ng33NSBHOu" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
-              <node concept="3qWCbU" id="4ng33NSBHOx" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
+            </node>
+            <node concept="3qWCbU" id="4ng33NSBHOx" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
-          <node concept="1yeLz9" id="4ng33NSBHOy" role="1TViLv">
-            <property role="TrG5h" value="DiffusersSynopsis.generator" />
-            <property role="3LESm3" value="710e6f7e-1f42-43e0-8f63-be8574d81eb2" />
-            <node concept="1BupzO" id="4ng33NSBHOC" role="3bR31x">
-              <property role="3ZfqAx" value="generator/templates" />
-              <property role="1Hdu6h" value="true" />
-              <property role="1HemKv" value="true" />
-              <node concept="3LXTmp" id="4ng33NSBHOD" role="1HemKq">
-                <node concept="55IIr" id="4ng33NSBHOz" role="3LXTmr">
-                  <node concept="2Ry0Ak" id="4ng33NSBHO$" role="iGT6I">
-                    <property role="2Ry0Am" value="languages" />
-                    <node concept="2Ry0Ak" id="4ng33NSBHO_" role="2Ry0An">
-                      <property role="2Ry0Am" value="DiffusersSynopsis" />
-                      <node concept="2Ry0Ak" id="4ng33NSBHOA" role="2Ry0An">
-                        <property role="2Ry0Am" value="generator" />
-                        <node concept="2Ry0Ak" id="4ng33NSBHOB" role="2Ry0An">
-                          <property role="2Ry0Am" value="templates" />
-                        </node>
+        </node>
+        <node concept="1yeLz9" id="4ng33NSBHOy" role="1TViLv">
+          <property role="TrG5h" value="DiffusersSynopsis.generator" />
+          <property role="3LESm3" value="710e6f7e-1f42-43e0-8f63-be8574d81eb2" />
+          <node concept="1BupzO" id="4ng33NSBHOC" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="4ng33NSBHOD" role="1HemKq">
+              <node concept="55IIr" id="4ng33NSBHOz" role="3LXTmr">
+                <node concept="2Ry0Ak" id="4ng33NSBHO$" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="4ng33NSBHO_" role="2Ry0An">
+                    <property role="2Ry0Am" value="DiffusersSynopsis" />
+                    <node concept="2Ry0Ak" id="4ng33NSBHOA" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="4ng33NSBHOB" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="3qWCbU" id="4ng33NSBHOE" role="3LXTna">
-                  <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-                </node>
+              </node>
+              <node concept="3qWCbU" id="4ng33NSBHOE" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
               </node>
             </node>
           </node>
@@ -510,44 +507,45 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="76e5yjGPFWZ" role="3bR37C">
+          <node concept="3bR9La" id="76e5yjGPFX0" role="1SiIV1">
+            <ref role="3bR37D" node="4ng33NSBHO4" resolve="DiffusersSynopsis" />
+          </node>
+        </node>
       </node>
-      <node concept="1X3_iC" id="2Ah3gYgUMoI" role="lGtFl">
-        <property role="3V$3am" value="modules" />
-        <property role="3V$3ak" value="0cf935df-4699-4e9c-a132-fa109541cba3/1500819558095907805/1500819558095907806" />
-        <node concept="1E1JtA" id="4ng33NSBLWm" role="8Wnug">
-          <property role="BnDLt" value="true" />
-          <property role="TrG5h" value="ideaPlugin" />
-          <property role="3LESm3" value="76f2191f-0a72-41b3-a3d4-57099860f54d" />
-          <node concept="55IIr" id="4ng33NSBLWp" role="3LF7KH">
-            <node concept="2Ry0Ak" id="4ng33NSCBUH" role="iGT6I">
-              <property role="2Ry0Am" value="solutions" />
-              <node concept="2Ry0Ak" id="4ng33NSCBUM" role="2Ry0An">
-                <property role="2Ry0Am" value="ideaPlugin" />
-                <node concept="2Ry0Ak" id="4ng33NSCBUR" role="2Ry0An">
-                  <property role="2Ry0Am" value="ideaPlugin.msd" />
-                </node>
+      <node concept="1E1JtA" id="4ng33NSBLWm" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="ideaPlugin" />
+        <property role="3LESm3" value="76f2191f-0a72-41b3-a3d4-57099860f54d" />
+        <node concept="55IIr" id="4ng33NSBLWp" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4ng33NSCBUH" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="4ng33NSCBUM" role="2Ry0An">
+              <property role="2Ry0Am" value="ideaPlugin" />
+              <node concept="2Ry0Ak" id="4ng33NSCBUR" role="2Ry0An">
+                <property role="2Ry0Am" value="ideaPlugin.msd" />
               </node>
             </node>
           </node>
-          <node concept="1BupzO" id="4ng33NSCBV6" role="3bR31x">
-            <property role="3ZfqAx" value="models" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="4ng33NSCBV7" role="1HemKq">
-              <node concept="55IIr" id="4ng33NSCBV2" role="3LXTmr">
-                <node concept="2Ry0Ak" id="4ng33NSCBV3" role="iGT6I">
-                  <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="4ng33NSCBV4" role="2Ry0An">
-                    <property role="2Ry0Am" value="ideaPlugin" />
-                    <node concept="2Ry0Ak" id="4ng33NSCBV5" role="2Ry0An">
-                      <property role="2Ry0Am" value="models" />
-                    </node>
+        </node>
+        <node concept="1BupzO" id="4ng33NSCBV6" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4ng33NSCBV7" role="1HemKq">
+            <node concept="55IIr" id="4ng33NSCBV2" role="3LXTmr">
+              <node concept="2Ry0Ak" id="4ng33NSCBV3" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="4ng33NSCBV4" role="2Ry0An">
+                  <property role="2Ry0Am" value="ideaPlugin" />
+                  <node concept="2Ry0Ak" id="4ng33NSCBV5" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
                   </node>
                 </node>
               </node>
-              <node concept="3qWCbU" id="4ng33NSCBV8" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
+            </node>
+            <node concept="3qWCbU" id="4ng33NSCBV8" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>

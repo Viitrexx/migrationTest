@@ -15,11 +15,11 @@ import org.jetbrains.mps.openapi.model.SModelName;
 import org.jetbrains.mps.openapi.persistence.ModelLoadingOption;
 import org.jetbrains.mps.openapi.persistence.UnsupportedDataSourceException;
 import org.jetbrains.mps.openapi.persistence.ModelCreationException;
-import java.util.ArrayList;
-import org.jetbrains.mps.openapi.persistence.ModelLoadException;
+import jetbrains.mps.baseLanguage.logging.rt.LogContext;
 import org.jetbrains.mps.openapi.model.SModelId;
-import jetbrains.mps.util.FileUtil;
 import org.jetbrains.mps.openapi.model.SModelReference;
+import org.jetbrains.mps.openapi.persistence.ModelLoadException;
+import jetbrains.mps.util.FileUtil;
 import org.jetbrains.mps.openapi.persistence.ModelSaveException;
 import java.io.IOException;
 import org.jetbrains.mps.openapi.persistence.ModelFactoryType;
@@ -40,15 +40,21 @@ public class txtModelPersistence implements ModelFactory {
   @NotNull
   @Override
   public SModel create(@NotNull DataSource source, @NotNull SModelName name, @NotNull ModelLoadingOption... options) throws UnsupportedDataSourceException, ModelCreationException {
+    LogContext.with(txtModelPersistence.class, null, null).info("create()");
     if (!(supports(source))) {
       throw new UnsupportedDataSourceException(source);
     }
-    throw new ModelCreationException("Create exception", new ArrayList<>());
+    final SModelId id = myPersistenceFacade.createModelId("path: " + source);
+    final SModelReference ref = myPersistenceFacade.createModelReference(null, id, name);
+    DiffusersSynopsisModelDescriptor dsmd = new DiffusersSynopsisModelDescriptor(ref, source);
+    // Maybe some other actions here, check XmlModelPersistence
+    return dsmd;
   }
 
   @NotNull
   @Override
   public SModel load(@NotNull DataSource source, @NotNull ModelLoadingOption... options) throws UnsupportedDataSourceException, ModelLoadException {
+    LogContext.with(txtModelPersistence.class, null, null).info("load()");
     if (!(supports(source))) {
       throw new UnsupportedDataSourceException(source);
     }
@@ -63,6 +69,7 @@ public class txtModelPersistence implements ModelFactory {
 
   @Override
   public void save(@NotNull SModel model, @NotNull DataSource source) throws ModelSaveException, IOException {
+    LogContext.with(txtModelPersistence.class, null, null).info("save()");
     if (!(supports(source))) {
       throw new UnsupportedDataSourceException(source);
     }

@@ -2,7 +2,7 @@
 <idea-plugin>
   <id>txtPersistencePlugin</id>
   <name>Diffusers Synopsis Persistence Plugin</name>
-  <version>0.11</version>
+  <version>0.1</version>
   <depends>jetbrains.mps.core</depends>
   <extensions defaultExtensionNs="com.intellij">
     <mps.ModelFactoryProvider implementationClass="txtPersistence.txtPersistence.txtModelPersistence" />

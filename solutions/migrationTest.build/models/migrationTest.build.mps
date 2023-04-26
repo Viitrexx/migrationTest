@@ -89,18 +89,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
@@ -112,7 +102,6 @@
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
-        <child id="1238980147629899306" name="pluginXml" index="I30fb" />
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
@@ -273,60 +262,6 @@
         </node>
       </node>
     </node>
-    <node concept="1X3_iC" id="3Yjdmt9ybW4" role="lGtFl">
-      <property role="3V$3am" value="parts" />
-      <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/7389400916848080626" />
-      <node concept="m$_wf" id="4CyJMdu2QEc" role="8Wnug">
-        <property role="m$_wk" value="txtPersistencePlugin" />
-        <node concept="3_J27D" id="4CyJMdu2QEe" role="m$_yQ">
-          <node concept="3Mxwew" id="3yOivp1o48n" role="3MwsjC">
-            <property role="3MwjfP" value="migrationTestNameFromBuild" />
-          </node>
-        </node>
-        <node concept="3_J27D" id="4CyJMdu2QEg" role="m_cZH">
-          <node concept="3Mxwew" id="4CyJMdu3ezH" role="3MwsjC">
-            <property role="3MwjfP" value="migrationTest-txtPersistance-plugin" />
-          </node>
-        </node>
-        <node concept="3_J27D" id="4CyJMdu2QEi" role="m$_w8">
-          <node concept="3Mxwew" id="3yOivp1o43y" role="3MwsjC">
-            <property role="3MwjfP" value="1.0" />
-          </node>
-        </node>
-        <node concept="55IIr" id="4CyJMdu2QFs" role="I30fb">
-          <node concept="2Ry0Ak" id="4CyJMdu2QFx" role="iGT6I">
-            <property role="2Ry0Am" value="solutions" />
-            <node concept="2Ry0Ak" id="4CyJMdu2QFA" role="2Ry0An">
-              <property role="2Ry0Am" value="ideaPlugin" />
-              <node concept="2Ry0Ak" id="4CyJMdu2QFF" role="2Ry0An">
-                <property role="2Ry0Am" value="source_gen" />
-                <node concept="2Ry0Ak" id="4CyJMdu2QFM" role="2Ry0An">
-                  <property role="2Ry0Am" value="ideaPlugin" />
-                  <node concept="2Ry0Ak" id="4CyJMdu2QFR" role="2Ry0An">
-                    <property role="2Ry0Am" value="ideaPlugin" />
-                    <node concept="2Ry0Ak" id="4CyJMdu2QFW" role="2Ry0An">
-                      <property role="2Ry0Am" value="plugin.xml" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="m$_yB" id="4CyJMdu3ez3" role="m$_yh">
-          <ref role="m$_yA" node="4ng33NSBLWm" resolve="ideaPlugin" />
-        </node>
-        <node concept="m$_yB" id="4CyJMdu3f_Q" role="m$_yh">
-          <ref role="m$_yA" node="4CyJMdu3fun" resolve="txtPersistence" />
-        </node>
-        <node concept="m$_yB" id="4CyJMdu3fAc" role="m$_yh">
-          <ref role="m$_yA" node="4ng33NSBHO4" resolve="DiffusersSynopsis" />
-        </node>
-        <node concept="m$_yC" id="4CyJMdu3ezs" role="m$_yJ">
-          <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
-        </node>
-      </node>
-    </node>
     <node concept="m$_wf" id="3Yjdmt9yc1T" role="3989C9">
       <property role="m$_wk" value="txtPersistencePlugin" />
       <node concept="m$_yB" id="3Yjdmt9yc4T" role="m$_yh">
@@ -342,12 +277,12 @@
       </node>
       <node concept="3_J27D" id="3Yjdmt9yc1X" role="m_cZH">
         <node concept="3Mxwew" id="3Yjdmt9yc4p" role="3MwsjC">
-          <property role="3MwjfP" value="new-attempt-at-xml" />
+          <property role="3MwjfP" value="diff-syn-persist" />
         </node>
       </node>
       <node concept="3_J27D" id="3Yjdmt9yc1Z" role="m$_w8">
         <node concept="3Mxwew" id="3Yjdmt9yc4n" role="3MwsjC">
-          <property role="3MwjfP" value="0.1" />
+          <property role="3MwjfP" value="0.2" />
         </node>
       </node>
       <node concept="2pNNFK" id="3Yjdmt9yc3s" role="20twgj">

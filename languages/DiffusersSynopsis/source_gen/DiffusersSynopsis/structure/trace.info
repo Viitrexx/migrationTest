@@ -55,8 +55,8 @@
       <node id="5030534239781220208" at="68,180,69,113" concept="1" />
       <node id="5030534239781220528" at="69,113,70,112" concept="1" />
       <node id="5030534239781220953" at="70,112,71,116" concept="1" />
-      <node id="5030534239781222837" at="71,116,72,111" concept="1" />
-      <node id="5030534239781106041" at="72,111,73,22" concept="6" />
+      <node id="5030534239781222837" at="71,116,72,175" concept="1" />
+      <node id="5030534239781106041" at="72,175,73,22" concept="6" />
       <node id="5030534239781106041" at="58,0,75,0" concept="8" trace="createDescriptorForSynopsis#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="5030534239781106041" at="42,42,43,33" />
       <scope id="5030534239781106041" at="58,66,73,22">

@@ -1,0 +1,20 @@
+Pikachu
+masterpiece, best quality, Pikachu from Pokemon
+Negative prompt: 1girl, 1boy, nsfw, lowres, low quality
+Steps: 20, Sampler: DPM++ 2S a Karras, CFG scale: 8.f, Seed: 123456789L, Size: 512x768, Model hash: 0f0f0f0
+<---->
+Cinccino
+masterpiece, best quality, Cinccino from Pokemon, detailed sunlight, outdoors
+Negative prompt: 1girl, 1boy, nsfw, low quality, lowres, normal quality, worst quality, bad quality,
+Steps: 20, Sampler: Heun, CFG scale: 8.88f, Seed: 0L, Size: 512x512, Model hash: f0f0f0f0
+<---->
+Cinccino 2
+masterpiece, best quality, Cinccino from Pokemon, detailed sunlight, outdoors
+Negative prompt: 1girl, 1boy, nsfw, low quality, lowres, normal quality, worst quality, bad quality,
+Steps: 20, Sampler: Heun, CFG scale: 8.88f, Seed: 1337L, Size: 512x512, Model hash: f0f0f0f0
+<---->
+Charmander
+masterpiece, best quality, Charmander from Pokemon, fire, flames, 
+Negative prompt: 1girl, 1boy, nsfw, low quality, lowres, normal quality, worst quality, bad quality,
+Steps: 20, Sampler: Euler a, CFG scale: 8.88f, Seed: 1337L, Size: 512x512, Model hash: f0f0f0f0
+<---->

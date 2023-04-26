@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idea-plugin>
+  <id>txtPersistencePlugin</id>
+  <name>Diffusers Synopsis Persistence Plugin</name>
+  <version>0.2</version>
+  <depends>jetbrains.mps.core</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.ModelFactoryProvider implementationClass="txtPersistence.txtPersistence.txtModelPersistence" />
+    <mps.LanguageLibrary dir="" />
+  </extensions>
+  <extensions defaultExtensionNs="com.intellij">
+    <mps.LanguageLibrary dir="/languages" />
+  </extensions>
+</idea-plugin>

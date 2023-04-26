@@ -40,13 +40,13 @@
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
     <mkdir dir="${build.tmp}/default/migrationTest.zip" />
-    <mkdir dir="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml" />
-    <mkdir dir="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/META-INF" />
-    <echoxml file="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/migrationTest.zip/diff-syn-persist" />
+    <mkdir dir="${build.tmp}/default/migrationTest.zip/diff-syn-persist/META-INF" />
+    <echoxml file="${build.tmp}/default/migrationTest.zip/diff-syn-persist/META-INF/plugin.xml">
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>txtPersistencePlugin</id>
         <name>Diffusers Synopsis Persistence Plugin</name>
-        <version>0.1</version>
+        <version>0.2</version>
         <depends>jetbrains.mps.core</depends>
         <extensions defaultExtensionNs="com.intellij">          
           <mps.ModelFactoryProvider implementationClass="txtPersistence.txtPersistence.txtModelPersistence" />
@@ -58,14 +58,14 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/lib" />
-    <mkdir dir="${build.tmp}/default/new-attempt-at-xml.jar" />
-    <mkdir dir="${build.tmp}/default/new-attempt-at-xml.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/new-attempt-at-xml.jar/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/migrationTest.zip/diff-syn-persist/lib" />
+    <mkdir dir="${build.tmp}/default/diff-syn-persist.jar" />
+    <mkdir dir="${build.tmp}/default/diff-syn-persist.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/diff-syn-persist.jar/META-INF/plugin.xml">
       <idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>txtPersistencePlugin</id>
         <name>Diffusers Synopsis Persistence Plugin</name>
-        <version>0.1</version>
+        <version>0.2</version>
         <depends>jetbrains.mps.core</depends>
         <extensions defaultExtensionNs="com.intellij">          
           <mps.ModelFactoryProvider implementationClass="txtPersistence.txtPersistence.txtModelPersistence" />
@@ -77,10 +77,10 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <jar destfile="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/lib/new-attempt-at-xml.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/default/new-attempt-at-xml.jar" />
+    <jar destfile="${build.tmp}/default/migrationTest.zip/diff-syn-persist/lib/diff-syn-persist.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/default/diff-syn-persist.jar" />
     </jar>
-    <mkdir dir="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/lib" />
+    <mkdir dir="${build.tmp}/default/migrationTest.zip/diff-syn-persist/lib" />
     <mkdir dir="${build.tmp}/default/txtPersistence.jar" />
     <mkdir dir="${build.tmp}/default/txtPersistence.jar/META-INF" />
     <echoxml file="${build.tmp}/default/txtPersistence.jar/META-INF/module.xml">
@@ -112,7 +112,7 @@
         <sources jar="txtPersistence-src.jar" descriptor="txtPersistence.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/lib/txtPersistence.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/migrationTest.zip/diff-syn-persist/lib/txtPersistence.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/txtPersistence" />
       <fileset dir="${basedir}/solutions/txtPersistence/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/txtPersistence.jar" />
@@ -120,7 +120,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-txtPersistence-models">
       <fileset dir="${basedir}/solutions/txtPersistence/models" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/lib/txtPersistence-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/migrationTest.zip/diff-syn-persist/lib/txtPersistence-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/solutions/txtPersistence/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -130,7 +130,7 @@
       <zipfileset file="${basedir}/solutions/txtPersistence/txtPersistence.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-txtPersistence-models" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/languages" />
+    <mkdir dir="${build.tmp}/default/migrationTest.zip/diff-syn-persist/languages" />
     <mkdir dir="${build.tmp}/default/DiffusersSynopsis.jar" />
     <mkdir dir="${build.tmp}/default/DiffusersSynopsis.jar/META-INF" />
     <echoxml file="${build.tmp}/default/DiffusersSynopsis.jar/META-INF/module.xml">
@@ -191,7 +191,7 @@
         <sources jar="DiffusersSynopsis-src.jar" descriptor="DiffusersSynopsis.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/languages/DiffusersSynopsis.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/migrationTest.zip/diff-syn-persist/languages/DiffusersSynopsis.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/DiffusersSynopsis" />
       <fileset dir="${basedir}/languages/DiffusersSynopsis/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/DiffusersSynopsis.jar" />
@@ -236,7 +236,7 @@
         <sources jar="DiffusersSynopsis-src.jar" descriptor="DiffusersSynopsis.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/languages/DiffusersSynopsis-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/migrationTest.zip/diff-syn-persist/languages/DiffusersSynopsis-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/DiffusersSynopsis.generator" />
       <fileset dir="${basedir}/languages/DiffusersSynopsis/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/DiffusersSynopsis-generator.jar" />
@@ -247,7 +247,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-DiffusersSynopsis-generator-templates">
       <fileset dir="${basedir}/languages/DiffusersSynopsis/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/migrationTest.zip/new-attempt-at-xml/languages/DiffusersSynopsis-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/migrationTest.zip/diff-syn-persist/languages/DiffusersSynopsis-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/languages/DiffusersSynopsis/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -265,7 +265,7 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-DiffusersSynopsis-generator-templates" prefix="module/generator/templates" />
     </jar>
     <zip destfile="${build.layout}/migrationTest.zip">
-      <zipfileset file="${mps_home}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" prefix="new-attempt-at-xml/lib" />
+      <zipfileset file="${mps_home}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" prefix="diff-syn-persist/lib" />
       <fileset dir="${build.tmp}/default/migrationTest.zip" />
     </zip>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
